@@ -1,0 +1,22 @@
+{
+  "name": "aplicando-sass",
+  "version": "1.0.0",
+  "description": "Se aplica SASS al proyecto de Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThePunishDev/segunda-entrega-parcial.git"
+  },
+  "author": "Javier Masseroni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThePunishDev/segunda-entrega-parcial/issues"
+  },
+  "homepage": "https://github.com/ThePunishDev/segunda-entrega-parcial#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
