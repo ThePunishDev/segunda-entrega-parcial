@@ -1,0 +1,268 @@
+.container__contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 490px);
+    justify-content: center;                 
+}
+
+.container__contacto-title{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 180px;
+    margin-left: 10px;
+    margin-bottom: 100px;    
+}
+
+.container__contacto-icon{
+    width: 150px;
+    height: 150px;
+    margin: 180px 0 50px 300px;           
+}
+
+.contacto__adress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contacto__map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;             
+}
+
+.map{
+    margin: 0px 0px 0px 20px;
+
+    &__info{
+        margin-left: 100px;
+    }
+
+    &__data{
+        text-align: center;
+        margin: 10px 10px 50px 10px;
+        line-height: 1.5em;
+
+        h2{
+            margin-top: 20px;
+            margin-bottom: 24px;
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        &-item{
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+}
+
+
+.contacto__form{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    input{
+        width: 400px;
+        height: 40px;
+        margin: 10px;
+        padding: 0.5em 1em;
+
+    }
+
+    textarea{
+        margin-top: 10px;
+        padding: 0.5em;
+    }
+
+    button{
+        margin: 10px;
+        padding: 0.5em 1em;
+        border: none;
+        background: #313131;
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 1199px){
+    
+    .container__title{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto__title{
+        text-align: center;
+        margin: 220px 20px 50px 50px;
+        font-size: 45px;
+    }
+
+    .contacto__icon{
+        margin-top: 230px;
+        margin-right: 50px;
+    }
+
+    .contacto__adress{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+    
+    .map__info{
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 991px){
+    
+    .container__title{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto__title{
+        text-align: center;
+        margin: 220px 20px 50px 10px;
+        font-size: 45px;
+    }
+
+    .contacto__icon{
+        display: none;
+    }
+
+    .contacto__adress{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+    
+    .map__info{
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 767px){
+    
+    .container__title{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto__title{
+        text-align: center;
+        margin: 220px 20px 50px 10px;
+        font-size: 36px;
+    }
+
+    .contacto__icon{
+        display: none;
+    }
+    
+    .contacto__adress{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+    
+    .map__info{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575px){
+    
+    .container__title{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto__title{
+        text-align: center;
+        margin: 220px 20px 50px 10px;
+        font-size: 32px;
+    }
+
+    .contacto__icon{
+        display: none;
+    }
+
+    .contacto__adress{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    .map__info{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 561px){
+
+    .container__contacto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container__contacto-title{
+        text-align: center;
+        margin: 220px 20px 50px 10px;
+        font-size: 25px;
+    }
+
+    .container__contacto-icon{
+        display: none;
+    }
+
+    .contacto__adress{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    .map{
+        position: relative;
+        margin: 0 auto;
+        width: 0;
+        padding-bottom: 100%;
+        left: 50%;
+        margin-left: -50%;
+
+        &__info{
+            position: absolute;
+            margin-left: 5px;
+            width: 360px;
+        }
+
+        &__data{
+            
+            &-item{
+                h3{
+                    font-size: 20px;
+                }                
+            }
+        }
+    }
+    
+    .form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .textarea{
+        width: 100%;    
+    }
+} 

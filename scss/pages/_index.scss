@@ -7,9 +7,7 @@
     }
 
     &-text{
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
+        @include templateFlex(space-around);
     }
 
     &-titulo{

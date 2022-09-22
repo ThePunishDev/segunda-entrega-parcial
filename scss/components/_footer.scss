@@ -1,13 +1,12 @@
 .footer{
-    display: flex;
+    @include templateFlex(space-between);
     flex-direction: column;
     align-items: center;
-
     background-color: $accent;
-    width: 100%;
-    height: 250px;
+    padding: 60px 20px;
     
-    &__invitacion h2{
+    &__invitacion h2{  
+        @extend .container;      
         color: $secondary;
         font-size: 32px;
         font-weight: 200;
@@ -15,26 +14,71 @@
         margin-bottom: 15px;
     }
 
-    h3{
+    &__copyright{    
+        @extend .container;    
         color: $secondary;
         font-size: 15px;
         font-weight: 200;
-        margin-top: 30px;
+        padding-top: 20px;
+    }
+
+    &__redes{
+        @include templateFlex(space-between);
+
+        .rs-facebook{
+            width: 50px;
+            margin: 15px;
+        }
+        
+        .rs-instagram{
+            width: 50px;
+            margin: 15px;
+        }
+        
+        .rs-twitter{
+            width: 50px;
+            margin: 15px;
+        }
+        
+        .rs-twitch{
+            width: 50px;
+            margin: 15px;
+        }
+        
+        .rs-youtube{
+            width: 50px;
+            margin: 15px;
+        }
+
+        $iconSocialMedia: (
+
+            facebook: #3b5998,
+
+            instagram: #c92d8f,
+
+            twitter: #00acee,
+
+            twitch:  #6441a5,
+
+            youtube: #c4302b,
+
+        );
+
+        @each $namesocialMedia, $colorIcon in $iconSocialMedia{
+            .rs-#{$namesocialMedia}{
+                color: $secondary;
+                font-size: 50px;
+                transition: $transition;
+
+                &:hover{
+                    color: $colorIcon;
+                }
+            }
+        }
     }
 }
 
-.redes__img{
-    width: 50px;
-    margin: 15px;
-    
-    &:hover{
-        transition: all 0.7s;
-        background-color: $primary;
-        color: $accent;
-        border-radius: 15px;
-        padding: 10px;
-    }
-}
+
 
 // MEDIA QUERIES
 

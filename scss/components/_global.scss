@@ -6,10 +6,33 @@
     box-sizing: border-box;
 }
 
-body{    
-    font-family: 'Lato', sans-serif;
+body{        
+    font-family: 'Lato', sans-serif;    
 }
 
 main{    
     background-color: $primary;    
+}
+
+// extend
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+//mixin
+
+@mixin templateGrid($columns) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    gap: 5px;    
+}
+
+@mixin templateFlex($valueJustify) {
+    display: flex;
+    justify-content: $valueJustify;
+    align-items: center;
 }
