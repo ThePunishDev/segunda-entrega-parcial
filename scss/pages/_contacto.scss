@@ -36,7 +36,7 @@
     margin: 0px 0px 0px 20px;
 
     &__info{
-        margin-left: 100px;
+        margin-left: 90px;
     }
 
     &__data{
@@ -95,20 +95,20 @@
 
 @media (max-width: 1199px){
     
-    .container__title{
+    .container__contacto{
         display: flex;
         justify-content: center;
-    }
+        max-width: 90%;
 
-    .contacto__title{
-        text-align: center;
-        margin: 220px 20px 50px 50px;
-        font-size: 45px;
-    }
+        &-title{
+            text-align: center;
+            margin: 220px 0px 50px 0px;
+            font-size: 60px;
+        }
 
-    .contacto__icon{
-        margin-top: 230px;
-        margin-right: 50px;
+        &-icon{
+            margin: 220px 0px 50px 0px;
+        }
     }
 
     .contacto__adress{
@@ -119,25 +119,28 @@
     
     .map__info{
         margin: 0 auto;
+        padding-left: 10px;
+        width: 95%;
     }
     
 }
 
 @media (max-width: 991px){
     
-    .container__title{
+    .container__contacto{
         display: flex;
         justify-content: center;
-    }
+        max-width: 100%;
 
-    .contacto__title{
-        text-align: center;
-        margin: 220px 20px 50px 10px;
-        font-size: 45px;
-    }
+        &-title{
+            text-align: center;
+            margin: 220px 20px 50px 10px;
+            font-size: 55px;
+        }
 
-    .contacto__icon{
-        display: none;
+        &-icon{
+            display: none;            
+        }
     }
 
     .contacto__adress{
@@ -148,27 +151,29 @@
     
     .map__info{
         margin: 0 auto;
+        padding-left: 10px;
+        width: 95%;
     }
     
 }
 
 @media (max-width: 767px){
     
-    .container__title{
+    .container__contacto{
         display: flex;
         justify-content: center;
+
+        &-title{
+            text-align: center;
+            margin: 220px 20px 20px 10px;
+            font-size: 50px;
+        }
+
+        &-icon{
+            display: none;
+        }
     }
 
-    .contacto__title{
-        text-align: center;
-        margin: 220px 20px 50px 10px;
-        font-size: 36px;
-    }
-
-    .contacto__icon{
-        display: none;
-    }
-    
     .contacto__adress{
         display: flex;
         flex-direction: column;
@@ -177,24 +182,26 @@
     
     .map__info{
         margin: 0 auto;
+        padding-left: 10px;
+        width: 95%;
     }
 }
 
 @media (max-width: 575px){
     
-    .container__title{
+    .container__contacto{
         display: flex;
         justify-content: center;
-    }
 
-    .contacto__title{
-        text-align: center;
-        margin: 220px 20px 50px 10px;
-        font-size: 32px;
-    }
+        &-title{
+            text-align: center;
+            margin: 220px 5px 20px 10px;
+            font-size: 45px;
+        }
 
-    .contacto__icon{
-        display: none;
+        &-icon{
+            display: none;
+        }
     }
 
     .contacto__adress{
@@ -205,6 +212,7 @@
 
     .map__info{
         margin: 0 auto;
+        padding-left: 30px;
     }
 }
 
@@ -217,8 +225,8 @@
 
     .container__contacto-title{
         text-align: center;
-        margin: 220px 20px 50px 10px;
-        font-size: 25px;
+        margin: 220px 5px 20px 10px;
+        font-size: 30px;
     }
 
     .container__contacto-icon{
@@ -232,19 +240,8 @@
     }
 
     .map{
-        position: relative;
-        margin: 0 auto;
-        width: 0;
-        padding-bottom: 100%;
-        left: 50%;
-        margin-left: -50%;
-
-        &__info{
-            position: absolute;
-            margin-left: 5px;
-            width: 360px;
-        }
-
+        display: none;
+        
         &__data{
             
             &-item{

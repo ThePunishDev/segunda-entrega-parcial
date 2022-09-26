@@ -48,9 +48,8 @@
 @media (max-width: 991px){
 
     .navbar__item{
-        font-size: 14px;
-    }             
-    
+        font-size: 13px;        
+    }
 }
 
 @media (max-width: 767px){
@@ -61,7 +60,7 @@
         align-items: center;
 
         &__item{
-            margin: 15px 5px;        
+            margin: 15px 0px;        
             font-size: 13px;
         }
     }    
@@ -75,7 +74,7 @@
         align-items: center;
 
         &__item{
-            margin: 15px 5px;        
+            margin: 15px 0px;        
             font-size: 13px;
         }
     }      
