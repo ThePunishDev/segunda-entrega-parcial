@@ -154,7 +154,12 @@ main {
 
 @media (max-width: 991px) {
   .footer__invitacion h2 {
-    font-size: 30px; }
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    padding-bottom: 10px;
+    margin: 10px; }
   .footer__redes {
     display: flex;
     justify-content: center;
@@ -178,7 +183,12 @@ main {
 
 @media (max-width: 767px) {
   .footer__invitacion h2 {
-    font-size: 23px; }
+    font-size: 23px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    padding-bottom: 10px;
+    margin: 10px; }
   .footer__redes {
     display: flex;
     justify-content: center;
@@ -202,7 +212,12 @@ main {
 
 @media (max-width: 575px) {
   .footer__invitacion h2 {
-    font-size: 14px; }
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    padding-bottom: 10px;
+    margin: 10px; }
   .footer__redes {
     display: flex;
     justify-content: center;
@@ -226,7 +241,12 @@ main {
 
 @media (max-width: 561px) {
   .footer__invitacion h2 {
-    font-size: 14px; }
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    padding-bottom: 10px;
+    margin: 10px; }
   .footer__copyright small {
     font-size: 12px; }
   .footer__redes {
@@ -490,7 +510,9 @@ main {
     margin: 0 auto;
     padding: 0; }
     .cards__container {
-      width: 365px; }
+      width: 365px;
+      display: flex;
+      justify-content: center; }
       .cards__container-section {
         height: 520px; } }
 
@@ -508,14 +530,16 @@ main {
   .cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 0; }
     .cards__container {
-      min-width: 365px; }
+      width: 340px;
+      display: flex;
+      justify-content: center; }
       .cards__container-section {
-        height: 520px;
-        width: 360px; } }
+        height: 520px; } }
 
 .portfolio__container-header {
   display: flex;

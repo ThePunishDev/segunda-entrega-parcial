@@ -183,6 +183,8 @@
 
         &__container{
             width: 365px;
+            display: flex;
+            justify-content: center;
 
             &-section{
                 height: 520px;
@@ -212,16 +214,19 @@
     .cards{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;        
         margin: 0 auto;
         padding: 0;
 
+
         &__container{
-            min-width: 365px;
+            width: 340px;
+            display: flex;
+            justify-content: center;            
                         
             &-section{
-                height: 520px;
-                width: 360px;
+                height: 520px;              
             }
         }
     }   
